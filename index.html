@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep Debt Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sleep Debt Calculator</h1>
+    <form id="sleep-form">
+      <p>Enter how many hours you slept each day:</p>
+      <div class="input-grid">
+        <input type="number" name="monday" placeholder="Monday" min="0" max="24" required>
+        <input type="number" name="tuesday" placeholder="Tuesday" min="0" max="24" required>
+        <input type="number" name="wednesday" placeholder="Wednesday" min="0" max="24" required>
+        <input type="number" name="thursday" placeholder="Thursday" min="0" max="24" required>
+        <input type="number" name="friday" placeholder="Friday" min="0" max="24" required>
+        <input type="number" name="saturday" placeholder="Saturday" min="0" max="24" required>
+        <input type="number" name="sunday" placeholder="Sunday" min="0" max="24" required>
+      </div>
+      <label for="ideal">Ideal Sleep Hours per Night:</label>
+      <input type="number" id="ideal" name="ideal" value="8" min="0" max="24" required>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
